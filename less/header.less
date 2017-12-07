@@ -1,0 +1,50 @@
+@charset "UTF-8";
+@import "var";
+.sn_header{
+  height: 90rem/@var;
+  width: 100%;
+  background-color: @sn_color;
+  position: fixed;
+  max-width: 750px;
+  z-index: 999;
+  top: 0;
+}
+.classify,.car{
+  width: 90rem/@var;
+  height: 90rem/@var;
+  position: absolute;
+  top: 0;
+  background-size:44rem/@var 70rem/@var;
+}
+.classify{
+  left: 0;
+  background: url("../images/icon_category.png")center center no-repeat;
+  background-size:44rem/@var 70rem/@var;
+}
+.car{
+  right: 0;
+    background: url("../images/icon_cart.png")center center no-repeat;
+  background-size:50rem/@var 60rem/@var;
+  }
+.search {
+  height: 90rem/@var;
+  margin: 0 90rem/@var;
+  position: relative;
+  padding: 15rem/@var;
+  &:after{
+    content: "";
+    width: 50rem/@var;
+    height: 50rem/@var;
+    background: url("../images/icon_search.png")center center no-repeat;
+    position: absolute;
+    top:20rem/@var;
+    background-size:30rem/@var;
+  }
+}
+.search input{
+  width: 100%;
+  height: 60rem/@var;
+  border-radius: 10rem/@var;
+  padding-left: 50rem/@var;
+  background-color: rgba(255,255,255,.5);
+}
